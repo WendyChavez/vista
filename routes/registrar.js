@@ -1,3 +1,5 @@
+
+
 const {Router} = require('express');
 const router = Router();
 const {registrar} = require('../controllers/registrar');
@@ -5,7 +7,7 @@ const {registrar} = require('../controllers/registrar');
 router.route('/')
     .post(registrar);
 
-router.get('/vistas', (req, res) => {
+router.get('/registro', (req, res) => {
     res.sendFile("RegistroExitoso.html", {root: './public/'});
 })
 
